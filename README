@@ -1,0 +1,2 @@
+// before u use this app - keep in mind that - after the time is zero 
+// your pc will shut down due to "exec('shutdown /s /t 0'),"
