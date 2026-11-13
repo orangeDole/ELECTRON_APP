@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style> 
+.inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background-color: slategrey;
+}
+
+    html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.divblock{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 85%;
+    border: 2px solid black;
+    background-color: rgba(51, 46, 45, 0.911);
+    border-radius: 25px;
+
+}
+::placeholder{
+    text-align: center;
+    color: rgb(255, 247, 247);
+}
+input{
+    width: 40%;
+    background-color: rgba(160, 156, 156, 0);
+        border-radius: 25px;
+color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 700;
+}
+button{
+    margin: 5px;
+    width: 70%;
+    border-radius: 15%;    font-weight: 700;
+
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(210, 105, 30, 0.859);
+}
+</style>
+<body style="background-color: rgb(28, 29, 29);">
+    <div class="divblock">
+    <h1 id="info"></h1>
+    <h1 class="seconds" id="seconds"></h1>
+    <h1 id="mins"></h1>
+<div class="inp"><input type="text"  id="inputTime" placeholder="mins">
+    <button id="setter">setTimer</button>
+    <button id="stopper">stopTimer</button>
+    <button id="clear">clear interval</button>
+    <button id="resumeBtn">resume</button>
+</div>
+
+    </div>
+<script type="module" defer src="./elements.js"></script>
+<script type="module" defer src="./renderer.js"></script>
+</body>
+</html>
